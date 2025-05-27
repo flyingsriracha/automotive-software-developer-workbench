@@ -29,6 +29,4 @@ class PipelineStage(Stage):
         if config.software_factory:    
             SoftwareFactoryStack(self, "sw-factory", 
                 env_name, project_name, config.software_factory)
-    
 
-    

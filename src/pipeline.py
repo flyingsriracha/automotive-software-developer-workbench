@@ -49,8 +49,8 @@ class PipelineStack(cdk.Stack):
                 account=config.prod.account,
                 region=config.prod.region)
             pipeline.add_stage(
-                PipelineStage(self, "{}-test".format(config.project_name),
+                PipelineStage(self, "{}-prod".format(config.project_name),
                         'prod',
-                        config.project_name, 
-                        config.prod, 
+                        config.project_name,
+                        config.prod,
                         env=env_prod))
